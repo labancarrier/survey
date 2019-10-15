@@ -1,0 +1,66 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+<link href="index.css" rel="stylesheet" type="text/css">
+
+
+<h1 id="title">Survey Form</h1>
+  <p id="description">Labans survey</p>
+
+    <form id="survey-form">
+      <div class="form-group">
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" required placeholder="Enter your first name">
+      <span class="validity"></span>
+      </div>
+
+      <div class="form-group">
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" type="email"  required placeholder="Enter your email">
+      <span class="validity"></span>
+      </div>
+
+      <div class="form-group">
+      <label id="number-label" for="number">Your Age:</label>
+      <input id="number" type="number" min="10" max="99" step="1" required placeholder="Age">
+      <span class="validity"></span>
+      </div>
+
+      <div class="form-group">
+      <label id="role-label" for="dropdown">What is your current role:</label>
+      <select id="dropdown" name="current-role">
+        <option value="" disabled selected>Select an option</option>
+        <option value="student">Dancer</option>
+        <option value="blogger">Partier</option>
+        <option value="smb">Relaxed</option>
+        <option value="agency">Squirrel</option>
+        <option value="other">Other</option>
+      </select>
+      </div>
+
+      <div class="form-group">
+      <p>Would you recommend Labans Layer to a friend or family:</p>
+      <div class="input-group">
+        <label for="yes"><input id="yes" type="radio" name="user-rating" value="yes" checked> Yes</label>
+        <label for="no"><input id="no" type="radio" name="user-rating" value="also"> Also yes</label>
+        <label for="unsure"><input id="unsure" type="radio" name="user-rating" value="still"> Still yes</label>
+      </div>
+      </div>
+
+      <div class="form-group">
+      <p>Features you'd like to see in the future<br>(Check all that apply)</p>
+      <div class="input-group">
+        <label><input type="checkbox" name="improvements" value="events"> pictures</label>
+        <label><input type="checkbox" name="improvements" value="widgets"> random vidoes</label>
+      </div>
+      </div>
+
+      <div class="form-group">
+      <label id="textarea-label" for="comments">Comments and suggestions:</label>
+      <textarea id="comments" placeholder="Enter your comments here ..."  cols="30" rows="5"></textarea>
+      </div>
+
+      <div class="form-group">
+      <input id="submit" class="button" type="submit" value="Submit">
+      </div>
+    </form>
